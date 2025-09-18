@@ -1,0 +1,51 @@
+REACT USECONTEXT SETUP
+
+
+
+1.Import the context
+{
+    {createContext, usecontext}
+}
+
+2.define context
+{
+    usercontext = usecontext()
+}
+
+3.create a provider
+{
+    userprivder({children}){
+        -declare the variables
+        -declare the functions
+        -localstorage checker
+        -localstorage declaration
+        -localstorage remove
+    }
+}
+
+4.create a return
+{
+    usercontext.provider value = {{}} 
+    {children} //child of provider
+}
+
+5.create a hook
+{
+    user()=>{
+        usecontext(usercontext)
+    }
+}
+
+6.export the functions
+{
+    export provider;
+    export user //hook
+}
+
+7.wrap the app/route/index
+{
+    usercontext
+     app
+    usercontext
+}
+
