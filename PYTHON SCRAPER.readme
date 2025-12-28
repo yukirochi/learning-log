@@ -1,0 +1,55 @@
+PYTHON SCRAPER SETUP
+
+Import dependencies
+: requests
+: beautifulshops
+
+
+Define function
+
+
+Declare base variable
+:url = ''
+
+
+Error handling
+:try: except:
+
+
+declare header
+:    headers = {
+             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        }
+
+
+Fetch the data
+: reponse -> requests(url, header=)
+
+
+Check the status of data
+: if 200
+
+
+Parse the data
+: data -> beautifulshops(resp.text, 'html.parser')
+
+
+Extract main element
+: item -> find_all('html element', class_ = 'classname')
+
+
+Loop through the main element to extract the main data
+: For var in item
+: finaldata -> var.find('html element', class_ = 'classname')
+
+
+Display the data or put it inside variable
+:print
+:var = data
+
+
+Run the function when page runs
+: if __name__ == "__main__":
+: function()
+
+
